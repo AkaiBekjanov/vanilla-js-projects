@@ -1,0 +1,65 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    //оступы
+    margin:0;
+    padding:0;
+    // background-color
+    background-color: #1A1A1D;  
+}
+
+//CONTAINER
+.container{
+    max-width:1170px;
+    padding: 8px;
+    //оступы
+    margin: 0  auto;
+}
+
+//
+.box{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    
+    color:#FFFFFF;
+
+
+  
+    .accordeon{
+        //границы
+        width:100px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+       
+
+        //positon
+        text-align: center;
+     
+        //оступы
+        margin-bottom: 8px;
+
+        //bg-color
+        background-color: tomato;
+
+        //cursor
+        cursor: pointer;
+    }
+    .content{
+        //borders
+        max-height: 0px;
+        //
+        transition: all ease-in 0.3s;
+        //
+        overflow: hidden;
+           //cursor
+           cursor: pointer;
+    }
+    
+
+   
+}
+.box:nth-of-type(3){
+
+}
+
+

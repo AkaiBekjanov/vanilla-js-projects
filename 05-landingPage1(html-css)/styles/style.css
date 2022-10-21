@@ -1,0 +1,211 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+/* FONT FAMILIES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@100&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;
+  
+    list-style-type: none;
+    background-color: #12274F;
+    text-decoration: none;
+}
+:root{
+    --main-color:#FFFFFF;
+    --color:#00FF75
+}
+
+.container{
+    max-width:760px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* NAV */
+.nav{
+    display: flex;
+    column-gap: 21px;
+    font-family: 'Poppins Bold',sans-serif;
+    font-weight: 700;
+    transition: all ease 0.4s;
+    color:var(--main-color);
+    cursor: pointer;
+}
+
+
+/* search input */
+.search{
+    background: none;
+    border: none;
+    border-bottom:  1px solid var(--main-color);
+    
+    color:var(--main-color);
+    outline: none;
+    
+}
+.search::placeholder{
+    padding-left: 2rem;
+    color:var(--main-color)
+
+}
+
+/* logo */
+.logo img{
+    width:145.3px;
+    height:56px;
+    position: relative;
+    top:10px;
+    filter:drop-shadow(0px 0px 4px black)
+}
+
+
+/* CONTENT */
+.main{
+    display: flex;
+    height:200px;
+    align-items: center;
+    margin-top: 220px;
+    column-gap: 183px;
+}
+.main-items{
+    font-family: 'Poppins',sans-serif;
+    margin-top: 50px;
+    font-weight: 700;
+}
+.main-items > h1{
+    color:var(--main-color);
+    position: relative;
+    bottom: 100px;
+    font-size: 41.1px;
+    margin-bottom: 120px;
+}
+.search{
+    margin-left: 5px;
+}
+
+
+.btn-primary{
+    padding:1rem;
+    width:150px;
+    background-color: var(--color);
+    font-family: 'Poppins ',sans-serif;
+    font-weight: 700;
+    color:var(--main-color);
+    border: none;
+    border-radius: 50px 50px;
+}
+.main-items > div > img.fastfood{
+    position: relative;
+    margin-left: 10px;;
+    top:22px;
+    left: 10px;
+}
+.main-items > div{
+    position: relative;
+    width:290px;
+    bottom: 250px;
+}
+.main-items >  img.burger{
+    position: relative;
+    
+   width:341px;
+   bottom: 100px;
+   height:338px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media  screen and (max-width:900px) {
+  
+     .nav,.header--search{
+        display: none;
+       
+     
+     }
+    
+    
+     .container{
+        max-width: 300px;
+     }
+
+     .main{
+        flex-direction: column;
+     }
+     .burger{
+        height: 35px;
+        transition: all ease-in-out 0.4s;
+      
+     }
+    .burger > div{
+        width: 56px;
+        height: 5px;
+        background-color: #FFFFFF;
+    }
+    .burger > div.top{
+        margin-bottom: 8px;
+    }
+    .burger > div.middle{
+        margin-bottom: 8px;
+    }
+    .burger{
+        margin-top: 20px;
+    }
+    .burger.active > div.bottom{
+        margin-bottom: 0;
+        transition: all ease-in-out 0.4s;
+        position: relative;
+        bottom: 3.7px;
+        transform: rotate(-45deg);
+    }
+    .burger.active > div.middle{
+        display: none;
+        margin-bottom: 0;
+        transition: all ease-in-out 0.4s;
+    }  
+    .burger.active > div.top{
+        transition: all ease-in-out 0.4s;
+         margin:0;
+         transform: rotate(45deg);
+    }
+    .nav{
+        transition: all ease 0.4s;
+    }
+    .nav.active{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        cursor:auto;
+        padding: 24px 0 0 40px;
+        z-index: 2;
+        box-shadow: 0 0  4px rgba(0,0,0,0.3);
+        line-height: 2;
+        width:200px;
+        height: 100vh;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: blue;
+
+       transition: all ease 0.4s;
+    }
+    .nav.active > li{
+        cursor: pointer;
+    }
+   
+}

@@ -1,0 +1,34 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  text-align: center;
+}
+
+.slider-container {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  background-color: yellow;
+  transition: transform ease 0.5s;
+}
+
+.slider-item {
+  height: 100px;
+}
+
+.slider-item:nth-child(even) {
+  background-color: tomato;
+}
+
+.slider-item:nth-child(odd) {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

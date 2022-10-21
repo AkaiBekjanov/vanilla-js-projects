@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #222;
+    padding: 0;
+
+}
+h1{
+    text-align: center;
+    margin-top: 8px;
+    color: #FFFFFF;
+}
+.game{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width:305px;
+    transition:all  1s ease;
+    border: none;
+    border-radius: 4px;
+    padding:1px;
+    margin: 30px auto;
+    overflow-y:auto ;
+    height:350px;
+    
+}
+.game > button{
+     width:90%;
+     color:#FFFFFF;
+    
+     background-color: tomato;
+     border: none;
+     cursor: pointer;
+     margin-top:78px;
+     margin-left:85px
+}
+.game > button.hide{
+    display: none;
+   
+}
+.ceil{
+    display: none;
+    margin: 8px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    padding: 30px ;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: tomato;
+    
+
+}

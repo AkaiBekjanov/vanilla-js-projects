@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+ <!-- CREATED BY AKAI BEKJANOV -->
+    <div class="app">
+        <h1>Drawing App</h1>
+        <div class="container">
+            <div class="app__inner">
+                <!-- suggested colors -->
+                <div class="app__colors">
+                    <div class="app__cl--items"></div>
+                    <div class="app__cl--items"></div>
+                    <div class="app__cl--items"></div>
+                    <div class="app__cl--items color"></div>
+                    <!-- choosing a color -->
+            
+                    <input type="color" id="color-choose" class="color-list" >
+                    
+                </div>
+               
+               <label for="color-choose" class="lb-color">
+                <h2>Choose a color</h2>
+              
+            </label>
+            <div class="btn">OK</div>
+               
+                <canvas id="cvs"></canvas>
+            </div>
+        </div> 
+    </div>    
+    <script src="scripts/script.js"></script>
+    
+</body> 
+</html>

@@ -1,0 +1,35 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A1D;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.box {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+.box .accordeon {
+  width: 100px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 8px;
+  background-color: tomato;
+  cursor: pointer;
+}
+.box .content {
+  max-height: 0px;
+  transition: all ease-in 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
