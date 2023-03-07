@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+
+:root{
+  --color-green-100:#74C69D;
+  --color-white-100:#FFFFFF;
+  --color-dark-100:#212529
+}
+.app{
+  padding-top: 10px;
+  width:100%;
+  height: 100vh;
+  background-color: var(--color-green-100);
+  opacity: 100%;
+}
+.container{
+  max-width: 1140px;
+  margin: auto;
+
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  // logo
+  .nav__logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Crimson+Text',sans-serif;
+    column-gap: 18px;
+    .nav__logo--text{
+      font-size: 40px;
+    }
+  }
+}
+.nav__menu{
+  display: flex;
+  column-gap: 22px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 22px;
+   li a{
+       text-decoration: none;
+       color:var(--color-white-100)
+  }
+}
+
+.section-one{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  column-gap: 5px;
+  margin-top: 40px;
+  align-items: center;
+  padding-bottom: 33px;
+
+  justify-content: space-between;
+  .section-one__left{
+    display: flex;
+    flex-direction: column;
+    
+     row-gap: 20px;
+     .section-one__left--btn{
+      width:170px;
+      height:48px;
+      color:var(--color-dark-100);
+      font-size: 25px;
+      border-radius: 5px;
+      border: none;
+      background-color: var(--color-white-100);
+     }
+     .section-one__left--h2{
+      font-size: 20px;
+     }
+     .section-one__left--h1{
+      font-size: 37px;
+     }
+     .section-one__left--body{
+      font-size: 18px;
+     }
+  }
+ 
+}
+
+.resp-img{
+
+  max-width:100%;
+  height: auto;
+}
+
+
+// hamburger menu
+
+.hamburger-menu {
+  
+    display: none;
+    .bi-x-lg{
+      display: none;
+    }
+   i{
+    cursor: pointer;
+    font-size: 55px;
+    color:var(--color-white-100)
+   }
+}
+
+
+// pc
+@media (max-width:1200px) {
+  .container{
+    max-width: 970px;
+    
+  }
+ 
+}
+
+// laptop
+@media  (max-width:1024px) {
+  .container{
+    max-width:740px;
+   
+  }
+}
+// tablet
+@media (max-width:768px) {
+  .nav__menu{
+    display: none;
+  }
+  .hamburger-menu{
+    display: block;
+  }
+  .container{
+    max-width: 500px;
+  
+  }
+  .section-one__right{
+    order:-1
+  }
+  .section-one{
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2,2fr);
+  }
+  
+ 
+ 
+}
+// mobile
+@media  (max-width:568px) {
+  .container{
+    max-width: 90%;
+  
+  }
+  
+  
+  
+}
